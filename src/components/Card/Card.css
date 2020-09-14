@@ -1,0 +1,51 @@
+.cards {
+    display         : flex;
+    flex-wrap       : wrap;
+    justify-content : center;
+}
+
+.card {
+    position         : relative;
+    width            : 150px;
+    height           : 150px;
+    perspective      : 150em;
+    background-color : #c52940;
+    margin           : 5px;
+    border-radius    : 5px;
+    cursor           : pointer;
+}
+
+.card__side {
+    display             : flex;
+    align-items         : center;
+    justify-content     : center;
+    border-radius       : 5px;
+    position            : absolute;
+    top                 : 0;
+    left                : 0;
+    width               : 100%;
+    height              : inherit;
+    backface-visibility : hidden;
+    transition          : all .6s ease;
+    box-shadow          : 1em 1em 2em rgba(0, 0, 0, 0.2);
+}
+
+.card__side--front {
+    font-size      : 94px;
+    text-transform : uppercase;
+    font-weight    : bold;
+    color          : #cea1a8;
+}
+
+.card__side--back {
+    transform        : rotateY(180deg);
+    background-color : #fff;
+}
+
+.card--flipped .card__side--front {
+    transform : rotateY(-180deg);
+}
+
+.card--flipped .card__side--back {
+    transform : rotate(0);
+}

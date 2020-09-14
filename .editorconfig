@@ -1,0 +1,30 @@
+# EditorConfig это конфигурационный файл к большому количеству редакторов кода и IDE.
+# Его задача — создать единый формат настроек.
+# https://EditorConfig.org
+
+# Корневой файл EditorConfig
+# Если установлена в true, парсер не будет искать другие конфиги в родительских папках
+root = true
+
+# Для всех файлов используем правила
+[*]
+charset = utf-8
+
+# Перенос строки LF — Line Separator: Unix and OS X (\n)
+end_of_line = lf
+
+# Позволяет убедиться, что в конце файла всегда будет новая строка
+insert_final_newline = true
+
+# Позволяет убрать пробелы в конце строк
+trim_trailing_whitespace = true
+
+# Отступы в 4 пробела
+indent_size = 4
+indent_style = space
+
+# Максимальная ширина строки
+max_line_length = 120
+
+# Ширина отступа
+tab_width = 4
