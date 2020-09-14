@@ -1,7 +1,7 @@
-# Memory game Pokemons
+# Memory Game Pokemons
 ![Screenshot](git-docs/game.png)
 
-## Game rules
+## Game Rules
 At the beginning of the game, all the cards are mixed up and laid in rows, face down on the table.
 Player starts and turns over two cards:
 - If the cards don’t match (it’s not a pair), he turns them back over.
